@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
+import Button from './components/Button';
  
 function App() {
   return (
-    <p>
-      Cleanedup React App
+    <main>
+    <p className='shesharp'>
+      Cleaned up React App
     </p>
+      <Button text="Code Jam Time" />
+    </main>
   );
 }
  
