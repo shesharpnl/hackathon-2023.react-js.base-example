@@ -16,11 +16,12 @@ More practically the code is written in CSS, Javascript, HTML and JSX (a syntax 
     - [2) Clone the repository](#cloning-the-repository)
     - [3) Install dependencies](#installing-dependencies)
 - [Usage](#usage)
-    * [Inspect the GitHub Action execution logs](#inspect-the-github-action-execution-logs)
-    * [Run the script.js directly from your local machine](#run-the-scriptjs-directly-from-your-local-machine)
+    * [Run the development environment from your terminal](#run-the-development-environment-from-your-terminal)
+    * [Make changes and see updates](#make-changes-and-see-updates)
+    * [Debugging your project](#Debugging-your-project)
 - [How this project works](#how-this-project-works)
-    * [Scheduled GitHub Workflow](#scheduled-github-workflow)
-    * [The scheduled script written in JavaScript](#the-scheduled-script-written-in-javascript)
+    * [React.js](#react.js)
+    * [The Fetch API](#the-fetch-api)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -79,24 +80,20 @@ This is what the starting boilerplate looks like:
 
 ![Screenshot of the index page in the web browser.](./images/slack-messages.png)
 
-### See it yourself: Run the development environment from your terminal
+### Run the development environment from your terminal
 
 To verify that the project works by viewing it in your browser, follow these stpes.
 
 1. Open the root folder of your project in your code editor.
 2. Open a new terminal in your code editor. Type the command `npm run start`
-3. In the "Jobs" section, you should see a job called `post_job_to_slack`. Click on it to view the details of that job.
-4. In the job details, you should see a list of steps that were executed. The last step should be `Post random job`. Click on that step to view its logs.
-5. In the logs, you should see the output of the script that was executed. Look for the line that says `Slack response: 200 OK`. This indicates that the script was able to successfully post the job to Slack.
-6. You can also look for any error messages in the logs to identify any issues that may have occurred during the execution of the script.
+3. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. The page will reload when you save changes in your project.
+5. You may also see any lint errors in the console. The console can be accessed in Google Chrome via the developer tools. Hit the F12 key or right click in the browser window and select inspect.
+6. Within the developer tools, select "console."
 
 You should be able to see something like this:
 
 ![Screenshot of the index page in the web browser with the developer tools open.]()
-
-If you encounter any issues, you can try the following steps to troubleshoot:  
-
-1. 
 
 ### Make changes and see updates
 
@@ -104,32 +101,25 @@ Running the script locally allows you to test and debug the script without havin
 
 How to run the `script.js` file locally:  
 
-1. Open your terminal and navigate to the cloned repository:
-```
-cd hackathon-2023.slack-bot.base-example
-```
-2. In your terminal, set the `SLACK_WEBHOOK_URL` environment variable to the copied webhook URL:
-```
-export SLACK_WEBHOOK_URL=<copied-webhook-url>
-```
-Note: This step is only for Unix-based systems. If you're using Windows, you can set the environment variable using the System Properties window.
-3. Run the script by running:
-```
-node script.js
-```
-This will fetch job data from the specified URL, generate a Slack payload based on a random job, and post the payload to the incoming webhook URL you set up in the previous steps.
 
-That's it! You should now be able to run the script and post a random job to the Slack channel.
+![Gif of website changing after save]()
 
-![Screenshot of the script executed using your terminal](./images/executing-script.png)
 
+### Debugging your project
+
+If you are encountering error messages on you console or alerts from react, here are some steps you can take to further understand what is going wrong.
+
+
+1. Open the root directory of the project in your code editor.
+2. Open a new terminal within your code editor. It should also be navigated to the root directory of your project.
+3. Type the command ```npm run build``. This attempts to build your project as if it is going to production.
+4. If the bundler encounters errors, it will print the error message on your code editor terminal.
+5. Copy any error codes or messages (the first sentence or two is enough) and search for solutions. ChatGPT can be particularly useful for this.
 ## How this project works
 
 ### React.js
 
-GitHub Workflows are a feature of GitHub Actions that allow developers to create custom workflows that are triggered by specific events or scheduled to run at specific times. In this project, a scheduled workflow is used to run the bot every 5 minutes. This workflow is defined in a YAML file and specifies the job that needs to be run and when it should be run.
-
-To learn more about GitHub Actions and Workflows, you can check out the official documentation:
+React.js is a JavaScript framework that takes
 
 **GitHub Actions**: https://docs.github.com/en/actions  
 **GitHub Workflows**: https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions    
@@ -180,10 +170,7 @@ You can run these from the command line of your project to see how your applicat
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm run build`
 
