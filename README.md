@@ -22,6 +22,7 @@ More practically the code is written in CSS, Javascript, HTML and JSX (a syntax 
 - [How this project works](#how-this-project-works)
     * [React.js](#react.js)
     * [The Fetch API](#the-fetch-api)
+    * [Hooks in React](#hooks-in-react)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -97,10 +98,7 @@ You should be able to see something like this:
 
 ### Make changes and see updates
 
-Running the script locally allows you to test and debug the script without having to commit and push changes to the GitHub repository, which can save time and make the development process more efficient. It also allows you to test the script using different data or configurations that may not be available in the GitHub environment.
-
-How to run the `script.js` file locally:  
-
+Running the development server locally allows you to make changes and see their effect immediately. This gives instant feedback to you, the developer. You can make changes to any of the files, save them, and the localhost:300 page should automatically update. Nice!!
 
 ![Gif of website changing after save]()
 
@@ -109,39 +107,34 @@ How to run the `script.js` file locally:
 
 If you are encountering error messages on you console or alerts from react, here are some steps you can take to further understand what is going wrong.
 
-
 1. Open the root directory of the project in your code editor.
 2. Open a new terminal within your code editor. It should also be navigated to the root directory of your project.
 3. Type the command ```npm run build``. This attempts to build your project as if it is going to production.
-4. If the bundler encounters errors, it will print the error message on your code editor terminal.
+4. If the bundler encounters errors, it will print the first error message it encounters on your code editor terminal.
 5. Copy any error codes or messages (the first sentence or two is enough) and search for solutions. ChatGPT can be particularly useful for this.
+6. After resolving an error, you can repeat this step until you no longer receive build errors.
 ## How this project works
 
 ### React.js
 
-React.js is a JavaScript framework that takes
+React.js is a popular JavaScript library used for building user interfaces. It follows a component-based architecture, allowing developers to create reusable UI elements and manage state efficiently. React uses a virtual DOM to optimize rendering performance, making it an ideal choice for creating dynamic and interactive web applications.
 
-**GitHub Actions**: https://docs.github.com/en/actions  
-**GitHub Workflows**: https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions    
-
-Let's have a look at the GitHub Workflow used as part of this project.  
-You can find the GitHub workflow here: `.github/workflows/post-to-slack.yaml`.
-
-
-In summary, this GitHub Actions file sets up a job that runs every 5 minutes on an Ubuntu environment, sets up Node.js version 18, checks out the repository, and runs a script that posts a random job to Slack using the `SLACK_WEBHOOK_URL` environment variable.
+You can learn more about React from the Docs! [React docs: Quick Start](https://react.dev/learn)
 
 ### The Fetch API
 
-You can find the JavaScript file here: `script.js`.  
-This JavaScript file is used in the GitHub workflow to post a random job to a Slack channel.  
+The Fetch API is a built-in JavaScript interface that allows you to make HTTP requests and handle responses. It provides a simpler and more flexible alternative to the older XMLHttpRequest object. With the Fetch API, you can send requests to a server, receive data, and handle the response using promises, making it easier to work with data from APIs.
 
-The JavaScript file contains three functions:
+You can learn more about the Fetch API from the Mozilla Developers Network! [MDN - The Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
-- `getRandomJob(jobs)`: This function takes an array of jobs and returns a random job from the array.
 
-- `generateSlackPayload(job)`: This function takes a job object and generates a Slack payload using a Slack block kit. The payload contains the job name, and the color of the attachment is set to `#00b29a`.
+### Hooks in React.js
 
-- `postJobToSlack(webhookUrl, payload)`: This function takes a webhook URL and a payload and posts the payload to the Slack channel using a `fetch()` request. 
+This project is already using two React hooks, useEffect, and useState. React Hooks are functions that allow you to add state and lifecycle features to functional components. They provide a way to write reusable and modular code by enabling component-level state management and side effects without the need for class components.
+
+_useEffect:_ useEffect is a React Hook that allows you to perform side effects in functional components. It is used to handle tasks like data fetching, subscriptions, or manually changing the DOM, and it runs after every render by default.
+
+_useState:_ useState is a React Hook that enables functional components to have their own local state. It allows you to declare and manage state variables, providing a simple way to update and track changes in component data.
 
 
 ## Contributing
@@ -162,29 +155,4 @@ Thank you for your contributions!
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-
-## Available Scripts
-
-You can run these from the command line of your project to see how your application is coming along. These ar
-
-### `npm start`
-
-Runs the app in the development mode.\
-
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
 
