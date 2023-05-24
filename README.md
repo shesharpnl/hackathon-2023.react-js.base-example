@@ -126,6 +126,8 @@ The Fetch API is a built-in JavaScript interface that allows you to make HTTP re
 
 You can learn more about the Fetch API from the Mozilla Developers Network! [MDN - The Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
+We can see Fetch at work in the `App.jsx` file. We tell the browser to grab the `data.json` file so we can use it in our application.
+
 
 ### Hooks in React.js
 
@@ -135,6 +137,7 @@ _useEffect:_ useEffect is a React Hook that allows you to perform side effects i
 
 _useState:_ useState is a React Hook that enables functional components to have their own local state. It allows you to declare and manage state variables, providing a simple way to update and track changes in component data.
 
+This starting project combines these hooks in the `App.jsx` file to trigger the data fetch on page load as well as button click. These actions also update the state, in this case, the data, and that state update is reflected in the rendered page.
 
 ## Contributing
 
