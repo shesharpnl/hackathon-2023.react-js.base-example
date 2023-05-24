@@ -1,11 +1,78 @@
+/*  Welcome to the CSS file! 
+    You can make changes here to modify the look of your app.
+    Run the development application, open it in the browser, save changes and see them in immediately. 
+*/
+
+/** HTML ELEMENTS **/
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f5f5f5;
+    margin-top: 40px;
+}
+
+
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: 26px;
+    padding: 6px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    color: darkslategrey;
+    background-color: #fff;
+    margin: 20px auto 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2f4f4f;
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+
+/** CUSTOM CLASSES **/
+.sheSharp {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #2f4f4f;
+    display: flex;
+    justify-content: center;
+}
+
+.styledData {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #2f4f4f;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border-radius: 20px;
+    border-color: #2f4f4f;
+    border-style: solid;
+    border-width: 1px;
     margin: auto;
+    width: 30%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.1);
+
 }

@@ -30,16 +30,15 @@ function App() {
    }
 
   return (
-    <main>
-    <p className='shesharp'>
-      Cleaned up React App
-    </p>
-    <p className='shesharp'>
-      {data}
-    </p>      
-    <button  type='button' onClick={()=>handleSubmit()}>Submit</button>
-
-    </main>
+    <body className='container'>
+      <h1 className='sheSharp'>
+        SheSharp React.js Starter Page
+      </h1>
+      <p className='styledData'>
+        {data}  
+      </p>      
+      <button  type='button' className='' onClick={()=>handleSubmit()}>Submit</button>
+    </body>
   );
 }
  
