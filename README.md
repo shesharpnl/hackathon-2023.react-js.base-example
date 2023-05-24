@@ -79,7 +79,7 @@ Nice! You're ready to start coding.
 
 This is what the starting boilerplate looks like:
 
-![Screenshot of the index page in the web browser.](./images/slack-messages.png)
+![Screenshot of the index page in the web browser.](./public/npmstart.jpg)
 
 ### Run the development environment from your terminal
 
@@ -90,17 +90,16 @@ To verify that the project works by viewing it in your browser, follow these stp
 3. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 4. The page will reload when you save changes in your project.
 5. You may also see any lint errors in the console. The console can be accessed in Google Chrome via the developer tools. Hit the F12 key or right click in the browser window and select inspect.
+![Screenshot of the index page and cursor selecting 'inspect.'](./public/rightclickinspect.jpg)
 6. Within the developer tools, select "console."
 
 You should be able to see something like this:
 
-![Screenshot of the index page in the web browser with the developer tools open.]()
+![Screenshot of the index page in the web browser with the developer tools open.](./public/consoleindexpage.jpg)
 
 ### Make changes and see updates
 
 Running the development server locally allows you to make changes and see their effect immediately. This gives instant feedback to you, the developer. You can make changes to any of the files, save them, and the localhost:300 page should automatically update. Nice!!
-
-![Gif of website changing after save]()
 
 
 ### Debugging your project
