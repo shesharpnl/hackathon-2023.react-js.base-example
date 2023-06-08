@@ -14,7 +14,7 @@ function App() {
     async function fetchData() {
       const response = await fetch('data.json');
       const data = await response.json();
-      setData(data.one);
+      setData(data.data[0].job_name);
       return data;
     }
     fetchData();
@@ -25,10 +25,9 @@ function App() {
     const response = await fetch('data.json');
     const data = await response.json();
      console.log('submit');
-     setData(data.two);
+     setData(data.data[0].tag_categories[0]);
      return data;
    }
-
   return (
     <body className='container'>
       <h1 className='sheSharp'>

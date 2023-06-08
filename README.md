@@ -131,7 +131,7 @@ We can see Fetch at work in the `App.jsx` file. We tell the browser to grab the 
 
 ### Hooks in React.js
 
-This project is already using two React hooks, useEffect, and useState. React Hooks are functions that allow you to add state and lifecycle features to functional components. They provide a way to write reusable and modular code by enabling component-level state management and side effects without the need for class components.
+This project is already using two React hooks, useEffect, and useState. React Hooks are functions that allow you to add state and lifecycle features to functional components. They provide a way to write reusable and modular code by enabling component-level state management and side effects without the need for class components. OR, to put it more simply, they make React cool and life a bit easier.
 
 _useEffect:_ useEffect is a React Hook that allows you to perform side effects in functional components. It is used to handle tasks like data fetching, subscriptions, or manually changing the DOM, and it runs after every render by default.
 

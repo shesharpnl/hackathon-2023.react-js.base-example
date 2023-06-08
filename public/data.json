@@ -1,4 +1,100 @@
 {
-    "one": "This is data from a  JSON file",	
-    "two": "And so is this!"	
-}
+    "entry_count": 2,
+    "message": "Success",
+    "data": [
+      {
+        "job_name": "Junior Full Stack Developer",
+        "job_location": "Amsterdam, 1077XX Netherlands",
+        "department": "Engineering",
+        "hours": "Full-Time",
+        "remote": null,
+        "company_name": "PixelPerfect",
+        "company_url": "pixelperfect.nl",
+        "post_url": "pixelperfect.careers-website.com/jobs/view.php?id=1234",
+        "tags_matched": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "CSS",
+          "HTML"
+        ],
+        "tag_categories": [
+          "Web Development",
+          "Front-end Development",
+          "Back-end Development"
+        ],
+        "categories": [
+          "Web Development",
+          "Software Engineering"
+        ],
+        "seniority": "Junior IC",
+        "language": "en",
+        "city": "Amsterdam",
+        "country": "Netherlands",
+        "job_updated_at": null
+      },
+      {
+        "job_name": "Junior UX Designer",
+        "job_location": "Utrecht, 3542AD Netherlands",
+        "department": "Design",
+        "hours": "Full-Time",
+        "remote": null,
+        "company_name": "DesignFusion",
+        "company_url": "designfusion.nl",
+        "post_url": "designfusion.careers-website.com/jobs/view.php?id=5678",
+        "tags_matched": [
+          "User Experience",
+          "User Interface",
+          "Design Thinking",
+          "Wireframing",
+          "Prototyping"
+        ],
+        "tag_categories": [
+          "Design",
+          "User Experience",
+          "User Interface"
+        ],
+        "categories": [
+          "Design",
+          "User Experience"
+        ],
+        "seniority": "Junior IC",
+        "language": "en",
+        "city": "Utrecht",
+        "country": "Netherlands",
+        "job_updated_at": null
+      },
+      {
+        "job_name": "Junior Data Analyst",
+        "job_location": "Rotterdam, 3011CJ Netherlands",
+        "department": "Data",
+        "hours": "Full-Time",
+        "remote": null,
+        "company_name": "DataDriven",
+        "company_url": "datadriven.nl",
+        "post_url": "datadriven.careers-website.com/jobs/view.php?id=9012",
+        "tags_matched": [
+          "SQL",
+          "Data Analytics",
+          "Data Visualization",
+          "Data Mining",
+          "Python"
+        ],
+        "tag_categories": [
+          "Data",
+          "Data Analytics",
+          "Data Science",
+          "Data Visualization"
+        ],
+        "categories": [
+          "Data Analytics",
+          "Data Science"
+        ],
+        "seniority": "Junior IC",
+        "language": "en",
+        "city": "Rotterdam",
+        "country": "Netherlands",
+        "job_updated_at": null
+      }
+    ]
+  }
