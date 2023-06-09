@@ -23,6 +23,7 @@ More practically the code is written in CSS, Javascript, HTML and JSX (a syntax 
     * [React.js](#react.js)
     * [The Fetch API](#the-fetch-api)
     * [Hooks in React](#hooks-in-react)
+    * [Deploying your Project on Netlify](#deploying-your-project-to-netlify)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -141,6 +142,12 @@ _useState:_ useState is a React Hook that enables functional components to have 
 
 This starting project combines these hooks in the `App.jsx` file to trigger the data fetch on page load as well as button click. These actions also update the state, in this case, the data, and that state update is reflected in the rendered page.
 
+
+## Deploying your project to Netlify
+
+You can submit your hackathon project as a repo, or if you'd like, deploy it with Netlify. Netlify provides detailed instructions on connecting your gitHub account:
+
+[How to Deploy on Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
 ## Contributing
 
 Contributions to this project are welcome! If you find a bug, have a feature request, or want to contribute code, please follow these guidelines:
