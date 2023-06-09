@@ -118,6 +118,8 @@ If you are encountering error messages on you console or alerts from react, here
 
 React.js is a popular JavaScript library used for building user interfaces. It follows a component-based architecture, allowing developers to create reusable UI elements and manage state efficiently. React uses a virtual DOM to optimize rendering performance, making it an ideal choice for creating dynamic and interactive web applications.
 
+One key feature of React is the use of components. This project uses one functional component - a button. You can find this component by navigating from the root directory to  `src > components > Button.jsx`.
+
 You can learn more about React from the Docs! [React docs: Quick Start](https://react.dev/learn)
 
 ### The Fetch API
