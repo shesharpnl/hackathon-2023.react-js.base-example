@@ -31,12 +31,12 @@ function App() {
   return (
     <body className='container'>
       <h1 className='sheSharp'>
-        SheSharp React.js Starter Page
+        SheSharp React.js - Check out this JSON data!
       </h1>
       <p className='styledData'>
         {data}  
-      </p>      
-      <button  type='button' className='' onClick={()=>handleSubmit()}>Submit</button>
+      </p>
+      <Button text='Click me!' handleClick={()=>handleSubmit()}/>      
     </body>
   );
 }
