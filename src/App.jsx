@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Button from './components/Button';
+import Header from './components/Header'
 import { useEffect } from 'react';
 import { useState } from 'react';
  
@@ -29,7 +30,9 @@ function App() {
      return data;
    }
   return (
-    <body className='container'>
+    <>
+    <Header />
+    <main className='container'>
       <h1 className='sheSharp'>
         SheSharp React.js - Check out this JSON data!
       </h1>
@@ -37,7 +40,8 @@ function App() {
         {data}  
       </p>
       <Button text='Click me!' handleClick={()=>handleSubmit()}/>      
-    </body>
+    </main>
+    </>
   );
 }
  

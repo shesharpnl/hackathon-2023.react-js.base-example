@@ -11,10 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 40px;
+    margin: 0;
 }
-
-
 
 button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -41,6 +39,64 @@ button:hover {
 
 
 /** CUSTOM CLASSES **/
+.header {
+    display: flex;
+    justify-content: space-between; /* Keep the logo imagr on left side of the screen and menu items on right */
+    align-items: center;
+    max-width: 1000px; /* Limiting the maximum width of the header */
+    margin-inline: auto; /* Centering the header horizontally */
+    padding-inline: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Centering the logo image vertically */
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-list {
+    display: flex; /* Making the nav-list appear horizontal */
+}
+
+.nav-list > li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-list > li > a, .mob-nav-list > li > a{
+    text-decoration: none;
+    color: #2f4f4f;
+}
+
+.mobile-nav-button {
+    display: none;
+}
+
+.mob-nav-list-container {
+    position: absolute;
+    top: 30px; 
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.mob-nav-list {
+    padding: 0;
+    background-color: #fff; /* Adjust the background color as needed */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    margin-inline: auto;
+}
+
+.mob-nav-list > li {
+    list-style: none;
+    padding-block: 15px;
+}
+
 .sheSharp {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
@@ -76,3 +132,19 @@ button:hover {
     transform: scale(1.1);
 
 }
+
+@media (max-width: 768px) {
+    .mobile-nav-button {
+      display: block;
+      cursor: pointer;
+    }
+    .nav-list {
+        display: none;
+    }
+  }
+
+  
+  
+  
+  
+  
