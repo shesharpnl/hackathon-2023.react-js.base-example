@@ -223,4 +223,23 @@ a:hover {
   .logo_links {
     flex-direction: column;
   }
+
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .social-logo {
+    margin-right: 20px;
+  }
+  .footer-logo {
+    margin-left: -250px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    margin-left: -100px;
+  }
 }

@@ -8,9 +8,9 @@ import meetup from "../assets/meetup.jpg";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="logo_links">
-        <img src={logo} alt="" />
+        <img src={logo} alt="" className="footer-logo" />
         {/* Links to the website and github */}
         <ul>
           <li className="link-main-text">Useful Links</li>
@@ -26,9 +26,6 @@ export default function Footer() {
             >
               Check out the repo on Github
             </a>
-          </li>
-          <li>
-            <a href=""></a>
           </li>
         </ul>
 
@@ -59,6 +56,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
