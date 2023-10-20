@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="logo_links">
-        <img src={logo} alt="" className="footer-logo" />
+        <img src={logo} alt="She Sharp Logo" className="footer-logo" />
         {/* Links to the website and github */}
         <ul>
           <li className="link-main-text">Useful Links</li>

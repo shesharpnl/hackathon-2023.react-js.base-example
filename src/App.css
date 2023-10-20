@@ -135,16 +135,21 @@ button:hover {
 /* FOOTER STYLES */
 
 .footer {
-  background-color: #2f4f4f;
-  padding: 10px;
+  background-color: #66ccb0;
+  padding: 5px 10px;
   position: absolute;
   bottom: 0;
+
   width: 100%;
   color: #4fb39b;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.footer img {
+/* .footer img {
+  width: 40px;
+} */
+
+.footer-logo {
   width: 70px;
 }
 
@@ -152,7 +157,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 85%;
   margin: 20px auto;
 }
 
@@ -166,7 +171,7 @@ ul li {
 
 a {
   text-decoration: none;
-  color: #4fb39b;
+  color: #2f4f4f;
 }
 
 a:hover {
@@ -178,22 +183,17 @@ a:hover {
   color: white;
   font-weight: bold;
 }
-/* .links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-} */
 .socials {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 10px; */
 }
 
 .social-logo {
   /* width: 400px; */
   margin-bottom: 10px;
-  margin-right: 10px;
+  margin-right: 30px;
+  width: 40px;
 }
 
 @media (max-width: 768px) {
