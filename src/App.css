@@ -206,8 +206,10 @@ a:hover {
   }
 
   .socials {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 30px;
   }
   .logo_links {
     width: 90%;
@@ -225,10 +227,12 @@ a:hover {
   }
 
   .socials {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 20px auto;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* width: 90%; */
+    /* margin: 20px auto; */
   }
 
   .social-logo {
