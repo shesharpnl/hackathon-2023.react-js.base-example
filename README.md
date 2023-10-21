@@ -102,7 +102,6 @@ You should be able to see something like this:
 
 Running the development server locally allows you to make changes and see their effect immediately. This gives instant feedback to you, the developer. You can make changes to any of the files, save them, and the localhost:300 page should automatically update. Nice!!
 
-
 ### Debugging your project
 
 If you are encountering error messages on you console or alerts from react, here are some steps you can take to further understand what is going wrong.
@@ -113,6 +112,7 @@ If you are encountering error messages on you console or alerts from react, here
 4. If the bundler encounters errors, it will print the first error message it encounters on your code editor terminal.
 5. Copy any error codes or messages (the first sentence or two is enough) and search for solutions. ChatGPT can be particularly useful for this.
 6. After resolving an error, you can repeat this step until you no longer receive build errors.
+
 ## How this project works
 
 ### React.js
@@ -131,7 +131,6 @@ You can learn more about the Fetch API from the Mozilla Developers Network! [MDN
 
 We can see Fetch at work in the `App.jsx` file. We tell the browser to grab the `data.json` file so we can use it in our application.
 
-
 ### Hooks in React.js
 
 This project is already using two React hooks, useEffect, and useState. React Hooks are functions that allow you to add state and lifecycle features to functional components. They provide a way to write reusable and modular code by enabling component-level state management and side effects without the need for class components. OR, to put it more simply, they make React cool and life a bit easier.
@@ -142,26 +141,15 @@ _useState:_ useState is a React Hook that enables functional components to have 
 
 This starting project combines these hooks in the `App.jsx` file to trigger the data fetch on page load as well as button click. These actions also update the state, in this case, the data, and that state update is reflected in the rendered page.
 
-
 ## Deploying your project to Netlify
 
 You can submit your hackathon project as a repo, or if you'd like, deploy it with Netlify. Netlify provides detailed instructions on connecting your gitHub account:
 
 [How to Deploy on Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
+
 ## Contributing
 
-Contributions to this project are welcome! We accept PRs from existing community members and individuals that identify as an underrepresented gender in tech. [Read more about contributing to SheSharp projects.](https://github.com/shesharpnl/.github/blob/main/CONTRIBUTING.md#contributing-guidelines) If you find a bug, have a feature request, or want to contribute code, please follow these guidelines:
-
-1. Fork the repository and clone it to your local machine.
-2. Create a new branch for your changes: `git checkout -b my-branch-name`
-3. Make your changes, and test them thoroughly.
-4. Commit your changes with a descriptive commit message.
-5. Push your changes to your forked repository: `git push origin my-branch-name`
-6. Open a pull request against the main branch of this repository, explaining the changes you've made and why they are important.
-
-
-
-Thank you for your contributions!
+Before starting, please read our [Contributing Guide](CONTRIBUTING.md) for detailed information and instructions on contributing to this repository.
 
 ## License
 
