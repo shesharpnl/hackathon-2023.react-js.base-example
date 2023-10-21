@@ -47,7 +47,7 @@ button:hover {
   padding-inline: 10px;
 }
 
-.logo-container {
+.logo-container1 {
   display: flex;
   align-items: center; /* Centering the logo image vertically */
 }
@@ -76,7 +76,7 @@ button:hover {
   display: none;
 }
 
-.mob-nav-list-container {
+.mob-nav-list-container1 {
   position: absolute;
   top: 30px;
   width: 100%;
@@ -116,7 +116,7 @@ button:hover {
   justify-content: center;
 }
 
-.container {
+.container1 {
   border-radius: 20px;
   border-color: #2f4f4f;
   border-style: solid;
@@ -128,16 +128,20 @@ button:hover {
   transition: transform 0.3s ease-in-out;
 }
 
-.container:hover {
+.container1:hover {
   transform: scale(1.1);
 }
+
+
+
+
 
 /* FOOTER STYLES */
 
 .footer {
   background-color: #66ccb0;
   padding: 5px 10px;
-  position: absolute;
+  position:fixed;
   bottom: 0;
 
   width: 100%;
@@ -247,3 +251,6 @@ a:hover {
     margin-left: -100px;
   }
 }
+
+
+

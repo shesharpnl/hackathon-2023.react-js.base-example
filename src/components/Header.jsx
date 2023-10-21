@@ -1,6 +1,7 @@
 import logo from "../assets/logo.png";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 // Header component with logo and navigation links
 export default function Header() {
@@ -14,11 +15,11 @@ export default function Header() {
         {/* Container for the logo with a logo-container class */}
 
         <div className="logo-container">
-          <a href="#">
+          <Link href="/">
             {" "}
             {/* Link to the homepage */}
             <img className="logo" src={logo} alt="logo" />
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Nav Button */}
@@ -35,13 +36,13 @@ export default function Header() {
         <ul className="nav-list">
           {/* Add relevant links */}
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
@@ -53,13 +54,13 @@ export default function Header() {
           <ul className="mob-nav-list">
             {/* Add relevant links */}
             <li>
-              <a href="#">Home</a>
+              <Link href="#">Home</Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link href="#">About</Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link href="#">Contact</Link>
             </li>
           </ul>
         </div>
