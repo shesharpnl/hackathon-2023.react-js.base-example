@@ -5,6 +5,12 @@
 
 /** HTML ELEMENTS **/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.2em;
@@ -41,29 +47,35 @@ button:hover {
 .header {
   display: flex;
   justify-content: space-between; /* Keep the logo imagr on left side of the screen and menu items on right */
+  padding: 15px 0;
   align-items: center;
-  max-width: 1000px; /* Limiting the maximum width of the header */
-  margin-inline: auto; /* Centering the header horizontally */
+  max-width: 100%;
+  /* max-width: 1420px; */
+  /* margin-inline: auto; Centering the header horizontally */
   padding-inline: 10px;
+  background-color: #66ccb0;
+  margin-bottom: 20px;
 }
 
-.logo-container {
+/* .logo-container {
   display: flex;
-  align-items: center; /* Centering the logo image vertically */
-}
+  align-items: center; 
+} */
 
 .logo {
   width: 50px;
   height: 50px;
+  margin-left: 100px;
 }
 
 .nav-list {
   display: flex; /* Making the nav-list appear horizontal */
+  margin-right: 100px;
 }
 
 .nav-list > li {
   list-style: none;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .nav-list > li > a,
@@ -72,6 +84,10 @@ button:hover {
   color: #2f4f4f;
 }
 
+.header a:hover {
+  color: white;
+  text-decoration: underline;
+}
 .mobile-nav-button {
   display: none;
 }
@@ -136,6 +152,8 @@ button:hover {
 
 .footer {
   background-color: #66ccb0;
+  max-width: 100%;
+  margin-left: -2px;
   padding: 5px 10px;
   position: absolute;
   bottom: 0;
@@ -144,10 +162,6 @@ button:hover {
   color: #4fb39b;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* .footer img {
-  width: 40px;
-} */
 
 .footer-logo {
   width: 70px;
@@ -197,6 +211,9 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .logo {
+    margin-left: 30px;
+  }
   .mobile-nav-button {
     display: block;
     cursor: pointer;
