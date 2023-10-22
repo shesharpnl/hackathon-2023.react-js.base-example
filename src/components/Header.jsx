@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 
 // Header component with logo and navigation links
-export default function Header() {
+export default function Header({ setShowContact }) {
   // State for conditional rendering of bars icon
   const [showMobileNav, setShowMobileNav] = useState(false);
 
@@ -40,7 +40,7 @@ export default function Header() {
           <li>
             <a href="#">About</a>
           </li>
-          <li>
+          <li onClick={() => setShowContact(true)}>
             <a href="#">Contact</a>
           </li>
         </ul>
@@ -58,7 +58,7 @@ export default function Header() {
             <li>
               <a href="#">About</a>
             </li>
-            <li>
+            <li onClick={() => setShowContact(true)}>
               <a href="#">Contact</a>
             </li>
           </ul>
