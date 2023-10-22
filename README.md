@@ -149,7 +149,7 @@ You can submit your hackathon project as a repo, or if you'd like, deploy it wit
 
 ## Contributing
 
-Before starting, please read our [Contributing Guide](CONTRIBUTING.md) for detailed information and instructions on contributing to this repository.
+Before starting, please read our [Contributing Guide](https://github.com/shesharpnl/.github/blob/main/CONTRIBUTING.md) for detailed information and instructions on contributing to this repository.
 
 ## License
 
