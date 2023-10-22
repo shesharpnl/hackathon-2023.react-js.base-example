@@ -14,6 +14,10 @@ body {
   margin: 0;
 }
 
+main {
+  margin-block: 50px; /* add a little gap between header, main, and footer*/
+}
+
 button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
@@ -35,6 +39,14 @@ button:hover {
   cursor: pointer;
   transform: scale(1.05);
   color: #fff;
+}
+/* Center the form element and its children */
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
 }
 
 /** CUSTOM CLASSES **/
@@ -132,13 +144,24 @@ button:hover {
   transform: scale(1.1);
 }
 
+.input-field {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.message-input {
+  height: 80px;
+}
+
 /* FOOTER STYLES */
 
 .footer {
   background-color: #66ccb0;
   padding: 5px 10px;
-  position: absolute;
-  bottom: 0;
+  display: flex;
+  justify-content: center;
 
   width: 100%;
   color: #4fb39b;
