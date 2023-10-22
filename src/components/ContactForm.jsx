@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-// Header component with logo and navigation links
+// ContactForm component 
 export default function ContactForm() {
   // State for form inputs
   const [name, setName] = useState("");
