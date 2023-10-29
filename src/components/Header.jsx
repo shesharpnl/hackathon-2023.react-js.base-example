@@ -7,6 +7,21 @@ export default function Header({ setShowContact }) {
   // State for conditional rendering of bars icon
   const [showMobileNav, setShowMobileNav] = useState(false);
 
+  const handleClickContact = () => {
+    setShowMobileNav(false)
+    setShowContact(true)
+  }
+  const handleClickHome = () => {
+    setShowMobileNav(false)
+    setShowContact(false)
+
+  }
+
+  const handleClickOther = () => {
+    setShowMobileNav(false)
+
+  }
+
   return (
     // Navigation container with a header class
     <>
@@ -34,13 +49,13 @@ export default function Header({ setShowContact }) {
 
         <ul className="nav-list">
           {/* Add relevant links */}
-          <li>
+          <li onClick={handleClickHome}>
             <a href="#">Home</a>
           </li>
           <li>
             <a href="#">About</a>
           </li>
-          <li onClick={() => setShowContact(true)}>
+          <li onClick={handleClickContact}>
             <a href="#">Contact</a>
           </li>
         </ul>
@@ -52,13 +67,13 @@ export default function Header({ setShowContact }) {
         <div className="mob-nav-list-container">
           <ul className="mob-nav-list">
             {/* Add relevant links */}
-            <li>
+            <li onClick={handleClickHome}>
               <a href="#">Home</a>
             </li>
-            <li>
+            <li onClick={handleClickOther}>
               <a href="#">About</a>
             </li>
-            <li onClick={() => setShowContact(true)}>
+            <li onClick={handleClickContact}>
               <a href="#">Contact</a>
             </li>
           </ul>
