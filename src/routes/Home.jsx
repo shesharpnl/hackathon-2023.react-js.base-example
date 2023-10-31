@@ -1,15 +1,13 @@
 import React from "react";
-import "./App.css";
-import Button from "./components/Button";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import ContactForm from "./components/ContactForm";
+import Header from "../components/Header";
+import Footer from "../components/Footer"
+import "../App.css";
+import Button from "../components/Button";
 import { useEffect } from "react";
 import { useState } from "react";
 
-function App() {
+const Home = () => {
   const [data, setData] = useState("initial data");
-  const [showContact, setShowContact] = useState(false)
 
   useEffect(() => {
     console.log("useEffect");
@@ -30,24 +28,22 @@ function App() {
     setData(data.data[0].tag_categories[0]);
     return data;
   }
+
   return (
     <>
-      <Header setShowContact={setShowContact}/>
-      <main>
-        {showContact ? <ContactForm /> :
-        (
-          <div className="container">
+    <Header />
+    <main>
+        <div className="container">
             <h1 className="sheSharp">
               SheSharp React.js - Check out this JSON data!
             </h1>
             <p className="styledData">{data}</p>
             <Button text="Click me!" handleClick={() => handleSubmit()} />
-            </div>
-        )}
-      </main>
-      <Footer />
+        </div>
+        </main>
+    <Footer />
     </>
-  );
+    )
 }
 
-export default App;
+export default Home;

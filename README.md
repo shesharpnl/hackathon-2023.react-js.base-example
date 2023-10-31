@@ -12,18 +12,19 @@ More practically the code is written in CSS, Javascript, HTML and JSX (a syntax 
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-    - [1) Fork the repository](#forking-the-repository)
-    - [2) Clone the repository](#cloning-the-repository)
-    - [3) Install dependencies](#installing-dependencies)
+  - [1) Fork the repository](#forking-the-repository)
+  - [2) Clone the repository](#cloning-the-repository)
+  - [3) Install dependencies](#installing-dependencies)
 - [Usage](#usage)
-    * [Run the development environment from your terminal](#run-the-development-environment-from-your-terminal)
-    * [Make changes and see updates](#make-changes-and-see-updates)
-    * [Debugging your project](#Debugging-your-project)
+  - [Run the development environment from your terminal](#run-the-development-environment-from-your-terminal)
+  - [Make changes and see updates](#make-changes-and-see-updates)
+  - [Debugging your project](#Debugging-your-project)
 - [How this project works](#how-this-project-works)
-    * [React.js](#react.js)
-    * [The Fetch API](#the-fetch-api)
-    * [Hooks in React](#hooks-in-react)
-    * [Deploying your Project on Netlify](#deploying-your-project-to-netlify)
+  - [React.js](#react.js)
+  - [The Fetch API](#the-fetch-api)
+  - [Hooks in React](#hooks-in-react)
+  - [Implementing routing with Create Browser Router](#implementing-routing-with-create-browser-router)
+  - [Deploying your Project on Netlify](#deploying-your-project-to-netlify)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -36,7 +37,7 @@ Before you can install, use this project and add extra functionalities to it, yo
 - **A terminal**: this is the application that allows you to enter commands into your computer. You can use the default terminal on your operating system, or install a third-party terminal such as [iTerm2](https://iterm2.com/) for macOS or [Windows Terminal](https://aka.ms/terminal) for Windows.
 - **A code editor**: this is the application that allows you to write and edit code. A [Visual Studio Code](https://code.visualstudio.com/).
 - **JavaScript**: this is the programming language used in this project. You don't need to install it separately, as it comes pre-installed with most web browsers.
-- **Node.js ***: this is a JavaScript runtime environment that is necessary to run Create React App. It comes with npm, a package manager that will install dependencies. [Node.js here](https://nodejs.org/en)
+- **Node.js \***: this is a JavaScript runtime environment that is necessary to run Create React App. It comes with npm, a package manager that will install dependencies. [Node.js here](https://nodejs.org/en)
 - **Optional: Google Chrome**: Google Chrome is a web browser with useful developer tools. [Google Chrome Web Browser](https://www.google.com/chrome/)
 
 Once you have all of these prerequisites, you're ready to move on to the installation steps.
@@ -47,7 +48,7 @@ To install and make this React project your own, you need to fork this repositor
 
 ### 1) Fork the repository
 
-1. Go to the repository page on GitHub: [https://github.com/shesharpnl/hackathon-2023.react-js.base-example](https://github.com/shesharpnl/hackathon-2023.react-js.base-example).  
+1. Go to the repository page on GitHub: [https://github.com/shesharpnl/hackathon-2023.react-js.base-example](https://github.com/shesharpnl/hackathon-2023.react-js.base-example).
 
 2. Click the "Fork" button in the top right corner of the repository page. This will create a copy of the repository in your own GitHub account.
 
@@ -65,12 +66,12 @@ To install and make this React project your own, you need to fork this repositor
 git clone https://github.com/YOUR_USERNAME/hackathon-2023.react-js.base-example.git
 ```
 
-5. Press Enter again to execute the command. This will download the repository to your local machine. If you are cloning the repository using HTTPS, you may be prompted to enter your GitHub username and password. 
-If you are cloning the repository using SSH, you will need to set up authentication via SSH. You can find instructions for doing so [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh). Once you have set up authentication via SSH, you can clone the repository using the SSH URL.
+5. Press Enter again to execute the command. This will download the repository to your local machine. If you are cloning the repository using HTTPS, you may be prompted to enter your GitHub username and password.
+   If you are cloning the repository using SSH, you will need to set up authentication via SSH. You can find instructions for doing so [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh). Once you have set up authentication via SSH, you can clone the repository using the SSH URL.
 
 ### 3) Install dependencies
 
-Open the root folder of your locally cloned project in your code editor. Start a new terminal and run the command  
+Open the root folder of your locally cloned project in your code editor. Start a new terminal and run the command
 
 `npm install`
 
@@ -80,7 +81,7 @@ Nice! You're ready to start coding.
 
 This is what the starting boilerplate looks like:
 
-![Screenshot of the index page in the web browser.](./public/npmstart.jpg)
+![Screenshot of the index page in the web browser.](./public/HomePage.png)
 
 ### Run the development environment from your terminal
 
@@ -91,12 +92,12 @@ To verify that the project works by viewing it in your browser, follow these stp
 3. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 4. The page will reload when you save changes in your project.
 5. You may also see any lint errors in the console. The console can be accessed in Google Chrome via the developer tools. Hit the F12 key or right click in the browser window and select inspect.
-![Screenshot of the index page and cursor selecting 'inspect.'](./public/rightclickinspect.jpg)
+   ![Screenshot of the index page and cursor selecting 'inspect.'](./public/RightClickInspect.png)
 6. Within the developer tools, select "console."
 
 You should be able to see something like this:
 
-![Screenshot of the index page in the web browser with the developer tools open.](./public/consoleindexpage.jpg)
+![Screenshot of the index page in the web browser with the developer tools open.](./public/ConsoleHomePage.png)
 
 ### Make changes and see updates
 
@@ -108,7 +109,7 @@ If you are encountering error messages on you console or alerts from react, here
 
 1. Open the root directory of the project in your code editor.
 2. Open a new terminal within your code editor. It should also be navigated to the root directory of your project.
-3. Type the command ```npm run build``. This attempts to build your project as if it is going to production.
+3. Type the command ``npm run build`. This attempts to build your project as if it is going to production.
 4. If the bundler encounters errors, it will print the first error message it encounters on your code editor terminal.
 5. Copy any error codes or messages (the first sentence or two is enough) and search for solutions. ChatGPT can be particularly useful for this.
 6. After resolving an error, you can repeat this step until you no longer receive build errors.
@@ -119,7 +120,7 @@ If you are encountering error messages on you console or alerts from react, here
 
 React.js is a popular JavaScript library used for building user interfaces. It follows a component-based architecture, allowing developers to create reusable UI elements and manage state efficiently. React uses a virtual DOM to optimize rendering performance, making it an ideal choice for creating dynamic and interactive web applications.
 
-One key feature of React is the use of components. This project uses one functional component - a button. You can find this component by navigating from the root directory to  `src > components > Button.jsx`.
+One key feature of React is the use of components. This project uses one functional component - a button. You can find this component by navigating from the root directory to `src > components > Button.jsx`.
 
 You can learn more about React from the Docs! [React docs: Quick Start](https://react.dev/learn)
 
@@ -139,7 +140,20 @@ _useEffect:_ useEffect is a React Hook that allows you to perform side effects i
 
 _useState:_ useState is a React Hook that enables functional components to have their own local state. It allows you to declare and manage state variables, providing a simple way to update and track changes in component data.
 
-This starting project combines these hooks in the `App.jsx` file to trigger the data fetch on page load as well as button click. These actions also update the state, in this case, the data, and that state update is reflected in the rendered page.
+This starting project combines these hooks in the `Home.jsx` file to trigger the data fetch on page load as well as button click. These actions also update the state, in this case, the data, and that state update is reflected in the rendered page.
+
+### Implementing routing with Create Browser Router
+
+Routing allows you to create multiple pages on your website. In our case, we have three main pages: Home, Contact, and About.
+The routing functionality is established in the `index.js` file. This is also where you can manage the addition or removal of pages on the website.
+
+To keep things organized, the project is structured with a `routes` folder, which contains the page files, and a `components` folder, containing the components used within those pages.
+
+_Link:_ The project uses this React component as replacement of the `<a>` element.
+Here's an example of how you can use it to navigate to the Contact page:
+`<Link to={/contact}>Go to contact page!</Link>`
+
+You can learn more about Routing on the docs! [React Router](#https://reactrouter.com/en/main)
 
 ## Deploying your project to Netlify
 
@@ -154,4 +168,3 @@ Before starting, please read our [Contributing Guide](https://github.com/sheshar
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-

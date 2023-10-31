@@ -32,7 +32,7 @@ body {
 
 main {
   margin-block: 50px; /* add a little gap between header, main, and footer*/
-  flex:1;
+  flex:1;  /* Allow the element to fill the space between the header and the footer */
   display: flex;
   flex-direction: column;
   justify-content: center;

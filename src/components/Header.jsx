@@ -1,26 +1,18 @@
 import logo from "../assets/logo.png";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
 
 // Header component with logo and navigation links
-export default function Header({ setShowContact }) {
+export default function Header() {
   // State for conditional rendering of bars icon
   const [showMobileNav, setShowMobileNav] = useState(false);
 
-  const handleClickContact = () => {
+  const handleClick = () => {
     setShowMobileNav(false)
-    setShowContact(true)
-  }
-  const handleClickHome = () => {
-    setShowMobileNav(false)
-    setShowContact(false)
-
   }
 
-  const handleClickOther = () => {
-    setShowMobileNav(false)
-
-  }
 
   return (
     // Navigation container with a header class
@@ -29,11 +21,10 @@ export default function Header({ setShowContact }) {
         {/* Container for the logo with a logo-container class */}
 
         <div className="logo-container">
-          <a href="#">
-            {" "}
+          <Link to={`/`}>
             {/* Link to the homepage */}
             <img className="logo" src={logo} alt="logo" />
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Nav Button */}
@@ -49,14 +40,14 @@ export default function Header({ setShowContact }) {
 
         <ul className="nav-list">
           {/* Add relevant links */}
-          <li onClick={handleClickHome}>
-            <a href="#">Home</a>
+          <li onClick={handleClick}>
+            <Link to={`/`}>Home</Link>
           </li>
-          <li>
-            <a href="#">About</a>
+          <li onClick={handleClick}>
+            <Link to={`/about`}>About</Link>
           </li>
-          <li onClick={handleClickContact}>
-            <a href="#">Contact</a>
+          <li onClick={handleClick}>
+            <Link to={`/contact`}>Contact</Link>
           </li>
         </ul>
       </nav>
@@ -67,14 +58,14 @@ export default function Header({ setShowContact }) {
         <div className="mob-nav-list-container">
           <ul className="mob-nav-list">
             {/* Add relevant links */}
-            <li onClick={handleClickHome}>
-              <a href="#">Home</a>
+            <li onClick={handleClick}>
+              <Link to={`/`}>Home</Link>
             </li>
-            <li onClick={handleClickOther}>
-              <a href="#">About</a>
+            <li onClick={handleClick}>
+              <Link to={`/about`}>About</Link>
             </li>
-            <li onClick={handleClickContact}>
-              <a href="#">Contact</a>
+            <li onClick={handleClick}>
+              <Link to={`/contact`}>Contact</Link>
             </li>
           </ul>
         </div>
