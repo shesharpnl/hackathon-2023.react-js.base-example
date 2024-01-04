@@ -18,6 +18,7 @@ export default function ContactForm() {
     <>
 
         <form onSubmit={handleSubmit}> 
+            <div className="form-align">
             <h3>Contact us!</h3>
             <label htmlFor="name" >
                 Name:
@@ -35,6 +36,7 @@ export default function ContactForm() {
             </label>
             <br />
             <button>Submit</button>
+            </div>
         </form>
     </>
   );
