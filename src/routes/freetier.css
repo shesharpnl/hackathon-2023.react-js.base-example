@@ -1,0 +1,13 @@
+.free-tier-checklist {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-box {
+  flex: 1;
+  padding-right: 20px; /* Adjust spacing between the boxes */
+}
+
+.right-box img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+}

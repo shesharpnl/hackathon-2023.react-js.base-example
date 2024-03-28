@@ -1,4 +1,7 @@
 import React from 'react';
+import iwdPoster from "../assets/iwdposter.jpeg";
+import "./freetier.css"; // Import the CSS file
+
 
 const FreeTierIWD = () => {
   const handlePosterClick = () => {
@@ -12,12 +15,13 @@ const FreeTierIWD = () => {
         <h2>Your Free Tier Check-list</h2>
         <ul>
           <li>Create a poster to share around your workplace</li>
-          <li>Add a LinkedIn post using one of our templates</li>
+          <li>A
+            Add a LinkedIn post using one of our templates</li>
           <li>Check out free events in the area to bring your colleagues to</li>
         </ul>
       </div>
       <div className="right-box">
-        {/* Placeholder for poster image */}
+      <img src={iwdPoster} alt="International Women's Day Poster" />
         {/* Implement logic to display poster image */}
       </div>
     </div>
