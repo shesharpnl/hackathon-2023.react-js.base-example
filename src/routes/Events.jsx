@@ -51,13 +51,14 @@ const Events = () => {
 
   // Function to handle clicking on £ button
   const handleSupportClick = () => {
-    // You can implement the functionality to handle support click here
+    <Link to="/freetier-iwd" className="link-button"/>
   };
 
   return (
     <>
       <Header />
       <div className="calendar-container">
+        <h2>Sally's Hair Cultural Events Calendar</h2>
         <Calendar 
           onClickDay={handleDateClick} 
           tileContent={tileContent} // Add custom tile content for emoji alert
@@ -74,17 +75,13 @@ const Events = () => {
           </p>
           <p>Check out our support pack for {selectedEvent.name}!</p>
           <div className="support-buttons">
-            <button onClick={handleSupportClick}>£</button>
+            <button onClick={handleSupportClick()}>£</button>
             <button>££</button>
             <button>£££</button>
           </div>
           <p>Add a reminder for a later date. (Reminder icon)</p>
         </div>
       )}
-      {/* Link button to FreeTierIWD route */}
-      <Link to="/freetier-iwd" className="link-button">
-        Go to Free Tier IWD
-      </Link>
     </>
   );
 };
