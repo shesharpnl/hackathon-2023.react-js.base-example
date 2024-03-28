@@ -141,34 +141,19 @@ form {
   padding-block: 15px;
 }
 
-.sheSharp {
+.header-home {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 500;
   color: #2f4f4f;
   display: flex;
-  justify-content: center;
-}
+  justify-items: flex-start;
 
-.styledData {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #2f4f4f;
-  display: flex;
-  justify-content: center;
 }
 
 .container {
-  border-radius: 20px;
-  border-color: #2f4f4f;
-  border-style: solid;
-  border-width: 1px;
+  /* border-width: 1px; */
   width: 40%;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  padding: 40px;
-  transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
