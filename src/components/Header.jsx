@@ -49,6 +49,9 @@ export default function Header() {
           <li onClick={handleClick}>
             <Link to={`/contact`}>Contact</Link>
           </li>
+          <li onClick={handleClick}>
+              <Link to={`/events`}>Events</Link>
+            </li>
         </ul>
       </nav>
 
@@ -66,6 +69,9 @@ export default function Header() {
             </li>
             <li onClick={handleClick}>
               <Link to={`/contact`}>Contact</Link>
+            </li>
+            <li onClick={handleClick}>
+              <Link to={`/events`}>Events</Link>
             </li>
           </ul>
         </div>
