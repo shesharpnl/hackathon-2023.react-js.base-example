@@ -5,7 +5,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
 import Events from "./routes/Events";
-import FreeTierIWD from "./routes/freeTierIWD";
+import FreeTierIWD from "./components/FreeTier/freeTierIWD";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
