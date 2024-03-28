@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Calendar from "react-calendar";
 import 'react-calendar/dist/Calendar.css';
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
 
 const Events = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -56,7 +55,6 @@ const Events = () => {
 
   return (
     <>
-      <Header />
       <div className="calendar-container">
         <h2>Sally's Hair Cultural Events Calendar</h2>
         <Calendar 
