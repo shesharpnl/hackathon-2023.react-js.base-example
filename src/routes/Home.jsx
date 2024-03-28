@@ -34,7 +34,7 @@ const Home = () => {
     <main>
         <div className="container">
             <h1 className="header-home">
-              Powering inclusivity
+              Welcome to DreamNI
             </h1>
             <img src={banner} alt="banner" width={650}/>
             

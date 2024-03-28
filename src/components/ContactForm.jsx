@@ -1,24 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 // ContactForm component
 export default function ContactForm() {
-  // State for form inputs
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  {
-    /* Add relevant onSubmit logic */
-  }
-  function handleSubmit(e) {
-    e.preventDefault();
-    setName("");
-    setEmail("");
-    setMessage("");
-  }
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form>
         <h3 className="sign-up">Sign up form!</h3>
         <label htmlFor="name">
           What is the size of your company?
@@ -49,7 +36,9 @@ export default function ContactForm() {
           </div>
         </label>
         <br />
-        <button>Submit</button>
+        <Link to="/about">
+          <button>Submit</button>
+        </Link>
       </form>
     </>
   );
