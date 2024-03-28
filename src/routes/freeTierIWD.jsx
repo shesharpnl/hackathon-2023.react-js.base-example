@@ -44,7 +44,11 @@ const FreeTierIWD = () => {
       </div>
       <div className="right-box">
         {showPoster && (
-          <img src={iwdPoster} alt="International Women's Day Poster" />
+          <>
+            <div className="poster-actions">
+            </div>
+            <img src={iwdPoster} alt="International Women's Day Poster" />
+          </>
         )}
       </div>
     </div>
