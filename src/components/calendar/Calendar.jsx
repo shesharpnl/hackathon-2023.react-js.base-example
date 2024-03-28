@@ -12,15 +12,13 @@ function MyCalendar() {
 
   const eventDates = culturalEvents.map(event => event.date);
 
-  const tileContent = ({ date, view }) => {
-    if (view === 'month') {
-      const isEventDay = eventDates.some(eventDate => 
-        eventDate.getDate() === date.getDate() &&
-        eventDate.getMonth() === date.getMonth() &&
-        eventDate.getFullYear() === date.getFullYear()
-      );
-      return isEventDay ? <p>🎉</p> : null;
-    }
+  const tileClassName = ({ date }) => {
+    const isEventDay = eventDates.some(eventDate => 
+      eventDate.getDate() === date.getDate() &&
+      eventDate.getMonth() === date.getMonth() &&
+      eventDate.getFullYear() === date.getFullYear()
+    );
+    return isEventDay ? 'event-day' : null;
   };
 
   const onChange = (date) => {
@@ -33,7 +31,7 @@ function MyCalendar() {
       <Calendar 
         onChange={onChange} 
         value={date} 
-        tileContent={tileContent} // Custom tile content to display events
+        tileClassName={tileClassName} // Custom tile class to highlight event days
       />
     </div>
   );
