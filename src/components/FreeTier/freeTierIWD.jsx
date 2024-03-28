@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import iwdPoster from "../assets/iwdposter.jpeg";
+import iwdPoster from "../../assets/iwdposter.jpeg";
 import "./freetier.css"; // Import the CSS file
 
 const FreeTierIWD = () => {
