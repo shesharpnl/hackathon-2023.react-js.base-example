@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Calendar from "react-calendar";
 import 'react-calendar/dist/Calendar.css';
 import { Link } from "react-router-dom";
+import "./events.css"
 
 const Events = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -73,8 +74,9 @@ const Events = () => {
           </p>
           <p>Check out our support pack for {selectedEvent.name}!</p>
           <div className="support-buttons">
-            <button onClick={handleSupportClick()}>£</button>
-            <button>££</button>
+          <Link to="/freetier-iwd" className="link-button">
+              <button>£</button>
+            </Link>            <button>££</button>
             <button>£££</button>
           </div>
           <p>Add a reminder for a later date. (Reminder icon)</p>

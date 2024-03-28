@@ -15,7 +15,7 @@ const FreeTierIWD = () => {
     <Header/>
     <div className="free-tier-checklist">
       <div className="left-box">
-        <h2>Your Free Tier Check-list</h2>
+        <h2>Your Free Tier Check-list for International Women's Day</h2>
         <ul>
           <li>
             <input
