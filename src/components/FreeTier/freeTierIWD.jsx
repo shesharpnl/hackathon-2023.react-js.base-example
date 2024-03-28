@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import iwdPoster from "../../assets/iwdposter.jpeg";
 import "./freetier.css"; // Import the CSS file
+import Header from "../../components/Header";
 
 const FreeTierIWD = () => {
   const [showPoster, setShowPoster] = useState(false);
@@ -10,6 +11,8 @@ const FreeTierIWD = () => {
   };
 
   return (
+    <>
+    <Header/>
     <div className="free-tier-checklist">
       <div className="left-box">
         <h2>Your Free Tier Check-list</h2>
@@ -52,6 +55,7 @@ const FreeTierIWD = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 
