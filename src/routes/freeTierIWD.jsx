@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import iwdPoster from "../assets/iwdposter.jpeg";
 import "./freetier.css"; // Import the CSS file
 
-
 const FreeTierIWD = () => {
+  const [showPoster, setShowPoster] = useState(false);
+
   const handlePosterClick = () => {
-    // Handle clicking on the poster option
-    // You can implement the functionality to display the poster image here
+    setShowPoster(!showPoster); // Toggle the state to show/hide the poster
   };
 
   return (
@@ -14,15 +14,38 @@ const FreeTierIWD = () => {
       <div className="left-box">
         <h2>Your Free Tier Check-list</h2>
         <ul>
-          <li>Create a poster to share around your workplace</li>
-          <li>A
-            Add a LinkedIn post using one of our templates</li>
-          <li>Check out free events in the area to bring your colleagues to</li>
+          <li>
+            <input
+              type="checkbox"
+              id="poster"
+              name="poster"
+              checked={showPoster}
+              onChange={handlePosterClick}
+            />
+            <label htmlFor="poster">Create a poster to share around your workplace</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="linkedin"
+              name="linkedin"
+            />
+            <label htmlFor="linkedin">Add a LinkedIn post using one of our templates</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="events"
+              name="events"
+            />
+            <label htmlFor="events">Check out free events in the area to bring your colleagues to</label>
+          </li>
         </ul>
       </div>
       <div className="right-box">
-      <img src={iwdPoster} alt="International Women's Day Poster" />
-        {/* Implement logic to display poster image */}
+        {showPoster && (
+          <img src={iwdPoster} alt="International Women's Day Poster" />
+        )}
       </div>
     </div>
   );
