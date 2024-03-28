@@ -4,6 +4,8 @@ import "./index.css";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
+import EventsPage from "./routes/EventsPage";
+import FreeTierIWD from "./components/FreeTier/freeTierIWD";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/events",
+    element: <EventsPage />,
+  },
+  {
+    path: "/freetier-iwd",
+    element: <FreeTierIWD />,
   },
 ]);
 

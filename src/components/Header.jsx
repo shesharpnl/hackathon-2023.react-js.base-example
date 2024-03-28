@@ -47,8 +47,11 @@ export default function Header() {
             <Link to={`/about`}>About</Link>
           </li>
           <li onClick={handleClick}>
-            <Link to={`/contact`}>Contact</Link>
+            <Link to={`/contact`}>Sign up</Link>
           </li>
+          <li onClick={handleClick}>
+              <Link to={`/events`}>Events</Link>
+            </li>
         </ul>
       </nav>
 
@@ -65,7 +68,10 @@ export default function Header() {
               <Link to={`/about`}>About</Link>
             </li>
             <li onClick={handleClick}>
-              <Link to={`/contact`}>Contact</Link>
+              <Link to={`/contact`}>Sign up</Link>
+            </li>
+            <li onClick={handleClick}>
+              <Link to={`/events`}>Events</Link>
             </li>
           </ul>
         </div>

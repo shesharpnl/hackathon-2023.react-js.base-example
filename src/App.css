@@ -11,7 +11,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
 }
 
@@ -32,7 +33,7 @@ body {
 
 main {
   margin-block: 50px; /* add a little gap between header, main, and footer*/
-  flex:1;  /* Allow the element to fill the space between the header and the footer */
+  flex: 1; /* Allow the element to fill the space between the header and the footer */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +114,7 @@ form {
 
 .header a:hover {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .mobile-nav-button {
   display: none;
@@ -140,40 +141,25 @@ form {
   padding-block: 15px;
 }
 
-.sheSharp {
+.header-home {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 50px;
+  font-weight: 1000;
   color: #2f4f4f;
   display: flex;
-  justify-content: center;
-}
-
-.styledData {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #2f4f4f;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .container {
-  border-radius: 20px;
-  border-color: #2f4f4f;
-  border-style: solid;
-  border-width: 1px;
+  /* border-width: 1px; */
   width: 40%;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  padding: 40px;
-  transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   @media only screen and (max-width: 800px) {
-    width: 80%  }
+    width: 80%;
+  }
 }
 
 .container:hover {
@@ -191,6 +177,21 @@ form {
   height: 80px;
 }
 
+.sign-up {
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-buttons {
+  grid-column: span 1;
+}
+
 /* FOOTER STYLES */
 
 .footer {
@@ -206,16 +207,13 @@ form {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.footer-logo {
-  width: 70px;
+.nav-logo {
+  width: 100px;
+  margin-right: 1rem;
 }
 
-.logo_links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%;
-  margin: 20px auto;
+.footer-logo {
+  width: 70px;
 }
 
 ul {

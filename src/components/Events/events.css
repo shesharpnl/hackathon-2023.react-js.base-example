@@ -1,0 +1,25 @@
+/* events.css */
+
+.calendar-container {
+  float: right; /* Float the calendar to the right */
+  width: 50%; /* Adjust the width as needed */
+  padding: 20px;
+}
+
+.popup {
+  float: left; /* Float the popup to the left */
+  width: 50%; /* Adjust the width as needed */
+  padding: 20px;
+}
+
+.popup h3 {
+  margin-top: 0; /* Remove top margin for h3 */
+}
+
+.popup p {
+  margin-top: 10px; /* Add some space between paragraphs */
+}
+
+.popup .support-buttons {
+  margin-top: 20px; /* Add some space above the support buttons */
+}
