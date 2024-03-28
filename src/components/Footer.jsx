@@ -28,33 +28,6 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-
-        {/* Links to the socials */}
-
-        <div className="socials">
-          <a href="https://www.facebook.com/SheSharpNL/" target="blank">
-            <img src={facebook} alt="Facebook Logo" className="social-logo" />
-          </a>
-          <a href="https://www.instagram.com/shesharp.co/" target="blank">
-            <img src={ig} alt="Instagram Logo" className="social-logo" />
-          </a>
-          <a href="https://www.linkedin.com/company/shesharp/" target="blank">
-            <img src={linkedin} alt="Linkedin Logo" className="social-logo" />
-          </a>
-          <a href="https://twitter.com/sheSharpNL" target="blank">
-            <img src={twitter} alt="Twitter Logo" className="social-logo" />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCi-77kmSITumo5Sb9u9vKuA"
-            target="blank"
-          >
-            <img src={youtube} alt="Youtube Logo" className="social-logo" />
-          </a>
-
-          <a href="https://www.meetup.com/SheSharp/" target="blank">
-            <img src={meetup} alt="Meetup Logo" className="social-logo" />
-          </a>
-        </div>
       </div>
     </footer>
   );
