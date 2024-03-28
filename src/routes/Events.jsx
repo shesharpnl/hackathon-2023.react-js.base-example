@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Calendar from "react-calendar";
-import 'react-calendar/dist/Calendar.css'; // Import the styles
+import 'react-calendar/dist/Calendar.css';
+import { Link } from "react-router-dom";
+ // Import the styles
 
 const Events = () => {
   const [showPopup, setShowPopup] = useState(false);
