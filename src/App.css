@@ -148,7 +148,6 @@ form {
   color: #2f4f4f;
   display: flex;
   margin-bottom: 50px;
-
 }
 
 .container {
@@ -176,6 +175,21 @@ form {
 
 .message-input {
   height: 80px;
+}
+
+.sign-up {
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-buttons {
+  grid-column: span 1;
 }
 
 /* FOOTER STYLES */

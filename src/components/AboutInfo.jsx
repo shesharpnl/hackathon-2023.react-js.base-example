@@ -1,4 +1,4 @@
-import Form  from "./Form";
+import Form from "./Form";
 
 const AboutInfo = () => {
   return (
@@ -6,7 +6,6 @@ const AboutInfo = () => {
       <div>
         <p>Type here your text!</p>
       </div>
-      <Form />
     </>
   );
 };
