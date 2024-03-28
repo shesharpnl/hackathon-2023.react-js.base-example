@@ -49,11 +49,6 @@ const Events = () => {
     return null;
   };
 
-  // Function to handle clicking on £ button
-  const handleSupportClick = () => {
-    <Link to="/freetier-iwd" className="link-button"/>
-  };
-
   return (
     <>
       <div className="calendar-container">
