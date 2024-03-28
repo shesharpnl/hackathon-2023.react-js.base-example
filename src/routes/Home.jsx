@@ -36,7 +36,7 @@ const Home = () => {
             <h1 className="header-home">
               Powering inclusivity
             </h1>
-            <img src={banner} alt="banner" width={450}/>
+            <img src={banner} alt="banner" width={650}/>
             
         </div>
         </main>

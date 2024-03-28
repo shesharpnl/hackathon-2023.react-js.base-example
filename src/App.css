@@ -143,11 +143,11 @@ form {
 
 .header-home {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 50px;
+  font-weight: 1000;
   color: #2f4f4f;
   display: flex;
-  justify-items: flex-start;
+  margin-bottom: 50px;
 
 }
 
