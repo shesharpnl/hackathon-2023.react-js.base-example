@@ -11,7 +11,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
 }
 
@@ -32,7 +33,7 @@ body {
 
 main {
   margin-block: 50px; /* add a little gap between header, main, and footer*/
-  flex:1;  /* Allow the element to fill the space between the header and the footer */
+  flex: 1; /* Allow the element to fill the space between the header and the footer */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +114,7 @@ form {
 
 .header a:hover {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .mobile-nav-button {
   display: none;
@@ -173,7 +174,8 @@ form {
   justify-content: center;
 
   @media only screen and (max-width: 800px) {
-    width: 80%  }
+    width: 80%;
+  }
 }
 
 .container:hover {
@@ -206,16 +208,13 @@ form {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.footer-logo {
+.nav-logo {
   width: 70px;
+  margin-right: 1rem;
 }
 
-.logo_links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%;
-  margin: 20px auto;
+.footer-logo {
+  width: 70px;
 }
 
 ul {
