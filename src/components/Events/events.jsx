@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Calendar from "react-calendar";
 import 'react-calendar/dist/Calendar.css';
 import { Link } from "react-router-dom";
+import "./events.css"
 
 const Events = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -48,14 +49,10 @@ const Events = () => {
     return null;
   };
 
-  // Function to handle clicking on £ button
-  const handleSupportClick = () => {
-    // You can implement the functionality to handle support click here
-  };
-
   return (
     <>
       <div className="calendar-container">
+        <h2>Sally's Hair Cultural Events Calendar</h2>
         <Calendar 
           onClickDay={handleDateClick} 
           tileContent={tileContent} // Add custom tile content for emoji alert
@@ -72,17 +69,14 @@ const Events = () => {
           </p>
           <p>Check out our support pack for {selectedEvent.name}!</p>
           <div className="support-buttons">
-            <button onClick={handleSupportClick}>£</button>
-            <button>££</button>
+          <Link to="/freetier-iwd" className="link-button">
+              <button>£</button>
+            </Link>            <button>££</button>
             <button>£££</button>
           </div>
           <p>Add a reminder for a later date. (Reminder icon)</p>
         </div>
       )}
-      {/* Link button to FreeTierIWD route */}
-      <Link to="/freetier-iwd" className="link-button">
-        Go to Free Tier IWD
-      </Link>
     </>
   );
 };
